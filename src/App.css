@@ -61,3 +61,16 @@
   border-left: 1px solid black;
   color: black;
 }
+
+.right-panel {
+  /* overflow-y: scroll; */
+  margin-top: 95px;
+  text-align: center;
+  height: 650px;
+  width: 1500px;
+  margin-left: 320px;
+  float: left;
+  border-left: 1px solid black;
+  border-right: 1px solid black;
+  position: fixed;
+}

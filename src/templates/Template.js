@@ -3,6 +3,7 @@ import DashboardTemplate from "./DashboardTemplate";
 
 function Template(props) {
   var element;
+
   switch (props.template) {
     case "Dashboard":
       element = (

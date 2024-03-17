@@ -1,5 +1,7 @@
 import React from "react";
 import DashboardTemplate from "./DashboardTemplate";
+import BacklogTemplate from "./BacklogTemplate";
+import ClosedItemTemplate from "./ClosedItemTemplate";
 
 function Template(props) {
   var element;
@@ -9,6 +11,27 @@ function Template(props) {
       element = (
         <div className="right-panel">
           <DashboardTemplate />
+        </div>
+      );
+      break;
+    case "Backlog":
+      element = (
+        <div className="right-panel">
+          <BacklogTemplate />
+        </div>
+      );
+      break;
+    case "ClosedItems":
+      element = (
+        <div className="right-panel">
+          <ClosedItemTemplate />
+        </div>
+      );
+      break;
+    case "CurrentAssigmentTemplate":
+      element = (
+        <div className="right-panel">
+          <ClosedItemTemplate />
         </div>
       );
       break;

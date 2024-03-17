@@ -1,12 +1,13 @@
-import React from "react";
+import React, { useState } from "react";
 import RightPanel from "./RightPanel";
 import LeftPanel from "./LeftPanel";
 
 function Body(props) {
+  const [template, setTemplate] = useState(props.template);
   return (
     <>
-      <LeftPanel />
-      <RightPanel template={props.template} />
+      <LeftPanel setTemplate={setTemplate} />
+      <RightPanel template={template} />
     </>
   );
 }

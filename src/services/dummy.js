@@ -2,7 +2,7 @@
 import React from "react";
 
 const section = ()=>{
-    console.log("Testing PR approvals");
+    console.log("Testing PR approvals?");
 }
 
 export default section;

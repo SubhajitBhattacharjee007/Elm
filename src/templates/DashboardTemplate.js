@@ -8,5 +8,4 @@ function DashboardTemplate() {
   );
 }
 
-
 export default DashboardTemplate;

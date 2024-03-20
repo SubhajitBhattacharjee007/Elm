@@ -1,6 +1,6 @@
 .App {
   text-align: center;
-  /* height: 1000px; */
+  height: 800px;
 }
 
 .Header {
@@ -63,7 +63,7 @@
 }
 
 .right-panel {
-  /* overflow-y: scroll; */
+  overflow-y: scroll;
   margin-top: 95px;
   text-align: center;
   height: 100%;

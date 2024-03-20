@@ -2,15 +2,13 @@
   overflow-y: scroll;
   width: 100%;
   height: 600px;
-  border: 1px solid black;
-  margin-top: 20px;
+  margin-top: 40px;
 }
 .CurrentAssigmentTemplate {
   overflow-y: scroll;
   width: 100%;
   height: 600px;
-  border: 1px solid black;
-  margin-top: 20px;
+  margin-top: 40px;
 }
 .grid-container {
   display: grid;
@@ -21,7 +19,7 @@
 }
 
 .grid-item-closedTemplate {
-  /* border: 1px solid #a50810; */
+  border: 1px solid #990099;
   padding: 20px;
   font-size: 30px;
   text-align: center;

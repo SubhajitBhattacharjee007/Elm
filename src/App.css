@@ -62,7 +62,7 @@
 
 .NavBar-btn-first:hover,
 .NavBar-btn:hover {
-  background-color: rgb(208, 255, 208);
+  background-color: white;
   border-top: 1px solid black;
   border-left: 1px solid black;
   color: black;
@@ -102,7 +102,7 @@
   margin-right: 5px;
   font-size: medium;
   font-weight: bold;
-  background-color: #04aa6d;
+  background-color: blue;
   color: white;
   padding: 10px;
 }
@@ -116,14 +116,14 @@
   margin-right: 5px;
   font-size: medium;
   font-weight: bold;
-  background-color: #04aa6d;
+  background-color: blue;
   color: white;
   padding: 10px;
 }
 
 .sub-left-panel-1:hover,
 .sub-left-panel:hover {
-  background-color: #008cba;
+  background-color: #008000;
 }
 
 ::-webkit-scrollbar {

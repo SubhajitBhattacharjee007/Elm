@@ -7,7 +7,7 @@ import { FcApproval } from "react-icons/fc";
 function CurrentAssigmentTemplate() {
   return (
     <div className="CurrentAssigmentTemplate">
-      <h2>Current there is no active Elms.</h2>
+      <h2>List of open tasks.</h2>
       <div class="grid-container">
         <div class="grid-item-OpenTemplate">
           1<FcApproval />

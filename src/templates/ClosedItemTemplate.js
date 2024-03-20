@@ -5,7 +5,7 @@ import { FcCancel } from "react-icons/fc";
 function ClosedItemTemplate() {
   return (
     <div className="ClosedItemTemplate">
-      <h2>Currently there is no active task present.</h2>
+      <h2>List of closed tasks.</h2>
       <div class="grid-container">
         <div class="grid-item-closedTemplate">
           1<FcCancel />

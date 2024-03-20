@@ -2,6 +2,7 @@ import React from "react";
 import DashboardTemplate from "./DashboardTemplate";
 import BacklogTemplate from "./BacklogTemplate";
 import ClosedItemTemplate from "./ClosedItemTemplate";
+import CurrentAssigmentTemplate from "./CurrentAssignment";
 
 function Template(props) {
   var element;
@@ -31,7 +32,7 @@ function Template(props) {
     case "CurrentAssigmentTemplate":
       element = (
         <div className="right-panel">
-          <ClosedItemTemplate />
+          <CurrentAssigmentTemplate />
         </div>
       );
       break;

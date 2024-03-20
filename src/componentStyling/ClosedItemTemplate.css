@@ -1,0 +1,43 @@
+.ClosedItemTemplate {
+  overflow-y: scroll;
+  width: 100%;
+  height: 600px;
+  border: 1px solid black;
+  margin-top: 20px;
+}
+.CurrentAssigmentTemplate {
+  overflow-y: scroll;
+  width: 100%;
+  height: 600px;
+  border: 1px solid black;
+  margin-top: 20px;
+}
+.grid-container {
+  display: grid;
+  column-gap: 10px;
+  grid-template-columns: auto auto auto;
+  /* background-color: #2196f3; */
+  padding: 10px;
+}
+
+.grid-item-closedTemplate {
+  /* border: 1px solid #a50810; */
+  padding: 20px;
+  font-size: 30px;
+  text-align: center;
+  width: 400px;
+  height: 100px;
+  margin-top: 15px;
+  box-shadow: rgba(0, 0, 0, 0.15) 0px 2px 8px;
+}
+
+.grid-item-OpenTemplate {
+  border: 1px solid #990099;
+  padding: 20px;
+  font-size: 30px;
+  text-align: center;
+  width: 400px;
+  height: 100px;
+  margin-top: 15px;
+  box-shadow: rgba(0, 0, 0, 0.15) 0px 2px 8px;
+}

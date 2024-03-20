@@ -30,7 +30,18 @@ function LeftPanel(props) {
         }}
         style={{ backgroundColor: currentAssgmntColor }}
       >
-        Current Assignments
+        Open Items
+      </div>
+      <div
+        className="sub-left-panel"
+        onClick={() => {
+          props.setTemplate("ClosedItems");
+          setClosedItemColour(bgColorOnSelect);
+          resetOthers("ClosedItems");
+        }}
+        style={{ backgroundColor: closedItemColor }}
+      >
+        Closed Items
       </div>
       <div
         className="sub-left-panel"
@@ -42,17 +53,6 @@ function LeftPanel(props) {
         style={{ backgroundColor: backlogColor }}
       >
         Backlog
-      </div>
-      <div
-        className="sub-left-panel"
-        onClick={() => {
-          props.setTemplate("ClosedItems");
-          setClosedItemColour(bgColorOnSelect);
-          resetOthers("ClosedItems");
-        }}
-        style={{ backgroundColor: closedItemColor }}
-      >
-        Close Items
       </div>
     </div>
   );

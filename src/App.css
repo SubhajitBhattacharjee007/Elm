@@ -89,10 +89,8 @@
 }
 
 .sub-left-panel-1 {
-  vertical-align: middle;
-  line-height: 60px;
   text-align: left;
-  height: 6%;
+  height: 3%;
   border-bottom: 1px solid black;
   border-right: 1px solid black;
   margin-right: 5px;
@@ -103,10 +101,8 @@
 }
 
 .sub-left-panel {
-  vertical-align: middle;
-  line-height: 60px;
   text-align: left;
-  height: 6%;
+  height: 3%;
   border-bottom: 1px solid black;
   border-right: 1px solid black;
   margin-top: 10px;

@@ -9,22 +9,16 @@ function Task() {
 
         <form action="/action_page.php">
           <label for="fname">Project Name</label>
-          <input
-            type="text"
-            id="fname"
-            name="projectname"
-            placeholder="Project name.."
-          ></input>
-
+          <input type="text" id="fname" name="projectname"></input>
           <label for="lname">Issue Type</label>
-          <input
-            type="text"
-            id="lname"
-            name="lastname"
-            placeholder="Issue Type"
-          ></input>
-          <label for="lname">Status</label>
-          <input type="text" id="lname" name="lastname" placeholder=""></input>
+          <input type="text" id="lname" name="lastname"></input>
+          <label for="country">Status</label>
+          <select id="country" name="country">
+            <option value="australia">Begin progress</option>
+            <option value="canada">Issue done</option>
+            <option value="usa">Closed</option>
+            <option value="usa">Under dev review</option>
+          </select>
           <label for="lname">Acceptance Criteria</label>
           <input type="text" id="lname" name="lastname" placeholder=""></input>
           <label for="country">Priority</label>
@@ -33,8 +27,7 @@ function Task() {
             <option value="canada">Medium</option>
             <option value="usa">Low</option>
           </select>
-          <label for="lname">Description</label>
-          <input type="text" id="lname" name="lastname" placeholder=""></input>
+          <textarea>Issue description...</textarea>
           <label for="lname">Summary</label>
           <input type="text" id="lname" name="lastname" placeholder=""></input>
 

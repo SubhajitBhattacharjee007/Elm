@@ -77,9 +77,9 @@
 
 .left-panel {
   overflow-y: scroll;
-  text-align: center;
+  text-align: left;
   height: 100%;
-  width: 10%;
+  width: 13%;
   margin-left: 10px;
   margin-top: 95px;
   float: left;
@@ -91,7 +91,7 @@
 .sub-left-panel-1 {
   vertical-align: middle;
   line-height: 60px;
-  text-align: center;
+  text-align: left;
   height: 6%;
   border-bottom: 1px solid black;
   border-right: 1px solid black;
@@ -99,12 +99,13 @@
   font-size: medium;
   background-color: #04aa6d;
   color: white;
+  padding: 10px;
 }
 
 .sub-left-panel {
   vertical-align: middle;
   line-height: 60px;
-  text-align: center;
+  text-align: left;
   height: 6%;
   border-bottom: 1px solid black;
   border-right: 1px solid black;
@@ -113,6 +114,7 @@
   font-size: medium;
   background-color: #04aa6d;
   color: white;
+  padding: 10px;
 }
 
 .sub-left-panel-1:hover,

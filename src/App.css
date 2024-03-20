@@ -68,7 +68,7 @@
   text-align: center;
   height: 90%;
   width: 80%;
-  margin-left: 18%;
+  margin-left: 13%;
   float: left;
   border-left: 1px solid black;
   border-right: 1px solid black;
@@ -79,7 +79,7 @@
   overflow-y: scroll;
   text-align: center;
   height: 100%;
-  width: 15%;
+  width: 10%;
   margin-left: 10px;
   margin-top: 95px;
   float: left;
@@ -92,26 +92,32 @@
   vertical-align: middle;
   line-height: 60px;
   text-align: center;
-  height: 8%;
+  height: 6%;
   border-bottom: 1px solid black;
   border-right: 1px solid black;
   margin-right: 5px;
+  font-size: medium;
+  background-color: #04aa6d;
+  color: white;
 }
 
 .sub-left-panel {
   vertical-align: middle;
   line-height: 60px;
   text-align: center;
-  height: 8%;
+  height: 6%;
   border-bottom: 1px solid black;
   border-right: 1px solid black;
   margin-top: 10px;
   margin-right: 5px;
+  font-size: medium;
+  background-color: #04aa6d;
+  color: white;
 }
 
 .sub-left-panel-1:hover,
 .sub-left-panel:hover {
-  background-color: #b3ffb3;
+  background-color: #008cba;
 }
 
 ::-webkit-scrollbar {

@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 
 function LeftPanel(props) {
-  const bgColorOnSelect = "#090";
+  const bgColorOnSelect = "#008CBA";
 
   const [dashboardColor, setDashboardColour] = useState();
   const [currentAssgmntColor, setCurrentAssgmntColor] = useState();

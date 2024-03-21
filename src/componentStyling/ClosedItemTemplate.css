@@ -3,6 +3,7 @@
   width: 100%;
   height: 600px;
   margin-top: 40px;
+  margin-left: 20px;
 }
 .CurrentAssigmentTemplate {
   overflow-y: scroll;
@@ -19,23 +20,94 @@
 }
 
 .grid-item-closedTemplate {
-  border: 1px solid #990099;
-  padding: 20px;
   font-size: 30px;
   text-align: center;
   width: 400px;
-  height: 100px;
+  height: 150px;
   margin-top: 15px;
   box-shadow: rgba(0, 0, 0, 0.15) 0px 2px 8px;
 }
 
 .grid-item-OpenTemplate {
-  border: 1px solid #990099;
-  padding: 20px;
   font-size: 30px;
   text-align: center;
   width: 400px;
-  height: 100px;
+  height: 150px;
   margin-top: 15px;
   box-shadow: rgba(0, 0, 0, 0.15) 0px 2px 8px;
+}
+.TicketHeader {
+  display: flex;
+  flex-wrap: nowrap;
+  border-bottom: 1px solid rgb(219, 219, 219);
+  background-color: aliceblue;
+  width: 100%;
+  height: 25%;
+  font-family: "Segoe UI", "Noto Sans";
+}
+.TicketBody {
+  text-align: left;
+  font-size: 15px;
+  width: 100%;
+  height: 75%;
+  font-family: "Segoe UI", "Noto Sans";
+  overflow: scroll;
+  padding-top: 5px;
+  padding-left: 3px;
+}
+
+.TicketHeader-openTicket-flex1 {
+  text-align: left;
+  margin-right: 10px;
+  font-size: 30px;
+  /* border-right: 1px solid rgb(194, 59, 235); */
+  padding-right: 10px;
+  padding-left: 10px;
+}
+.TicketHeader-openTicket-flex2 {
+  /* border-right: 1px solid black; */
+  font-size: 20px;
+  line-height: 30px;
+  margin-right: 10px;
+  vertical-align: middle;
+  padding-right: 10px;
+  font-weight: bold;
+}
+
+.TicketHeader-openTicket-flex3 {
+  /* border-right: 1px solid black; */
+  font-size: 20px;
+  line-height: 30px;
+  vertical-align: middle;
+  padding-left: 90px;
+  font-weight: bold;
+  color: green;
+}
+
+.TicketHeader-closedTicket-flex1 {
+  text-align: left;
+  margin-right: 10px;
+  font-size: 30px;
+  /* border-right: 1px solid rgb(194, 59, 235); */
+  padding-right: 10px;
+  padding-left: 10px;
+}
+.TicketHeader-closedTicket-flex2 {
+  /* border-right: 1px solid black; */
+  font-size: 20px;
+  line-height: 30px;
+  margin-right: 10px;
+  vertical-align: middle;
+  padding-right: 10px;
+  font-weight: bold;
+}
+
+.TicketHeader-closedTicket-flex3 {
+  /* border-right: 1px solid black; */
+  font-size: 20px;
+  line-height: 30px;
+  vertical-align: middle;
+  padding-left: 90px;
+  font-weight: bold;
+  color: red;
 }

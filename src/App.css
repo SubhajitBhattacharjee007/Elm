@@ -76,7 +76,7 @@
   width: 80%;
   margin-left: 13%;
   float: left;
-  border-left: 1px solid black;
+  border-left: 3px solid rgb(207, 207, 207);
   border-right: 1px solid black;
   position: fixed;
 }
@@ -86,7 +86,7 @@
   text-align: left;
   height: 100%;
   width: 13%;
-  margin-left: 10px;
+  /* margin-left: 10px; */
   margin-top: 95px;
   float: left;
   /* border-left: 1px solid black;

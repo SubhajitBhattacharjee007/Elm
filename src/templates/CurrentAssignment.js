@@ -10,18 +10,122 @@ function CurrentAssigmentTemplate() {
       <h2>List of open tasks.</h2>
       <div class="grid-container">
         <div class="grid-item-OpenTemplate">
-          1<FcApproval />
+          <div class="TicketHeader">
+            <div class="TicketHeader-openTicket-flex1">
+              <FcApproval />
+            </div>
+            <div class="TicketHeader-openTicket-flex2">Elm_1234</div>
+            <div class="TicketHeader-openTicket-flex3">In Progress</div>
+          </div>
+          <div class="TicketBody">
+            P1 issue occurred in prod-2 environment. Users are unable to log in
+            to the portal. Env team, DBA team and all other are joined. Please
+            joined the bridge on 111-222-333. P1 issue occurred in prod-2
+            environment. Users are unable to log in to the portal. Env team, DBA
+            team and all other are joined. Please joined the bridge on
+            111-222-333
+          </div>
         </div>
-        <div class="grid-item-OpenTemplate">2</div>
-        <div class="grid-item-OpenTemplate">3</div>
-        <div class="grid-item-OpenTemplate">4</div>
-        <div class="grid-item-OpenTemplate">5</div>
-        <div class="grid-item-OpenTemplate">6</div>
-        <div class="grid-item-OpenTemplate">7</div>
-        <div class="grid-item-OpenTemplate">8</div>
-        <div class="grid-item-OpenTemplate">6</div>
-        <div class="grid-item-OpenTemplate">7</div>
-        <div class="grid-item-OpenTemplate">8</div>
+        <div class="grid-item-OpenTemplate">
+          <div class="TicketHeader">
+            <div class="TicketHeader-openTicket-flex1">
+              <FcApproval />
+            </div>
+            <div class="TicketHeader-openTicket-flex2">Elm_1234</div>
+            <div class="TicketHeader-openTicket-flex3">In Progress</div>
+          </div>
+          <div class="TicketBody">React is just awesome.</div>
+        </div>
+        <div class="grid-item-OpenTemplate">
+          <div class="TicketHeader">
+            <div class="TicketHeader-openTicket-flex1">
+              <FcApproval />
+            </div>
+            <div class="TicketHeader-openTicket-flex2">Elm_1234</div>
+            <div class="TicketHeader-openTicket-flex3">In Progress</div>
+          </div>
+          <div class="TicketBody">Learning is fun.</div>
+        </div>
+        <div class="grid-item-OpenTemplate">
+          <div class="TicketHeader">
+            <div class="TicketHeader-openTicket-flex1">
+              <FcApproval />
+            </div>
+            <div class="TicketHeader-openTicket-flex2">Elm_1234</div>
+            <div class="TicketHeader-openTicket-flex3">In Progress</div>
+          </div>
+          <div class="TicketBody">Learning is fun.</div>
+        </div>
+        <div class="grid-item-OpenTemplate">
+          <div class="TicketHeader">
+            <div class="TicketHeader-openTicket-flex1">
+              <FcApproval />
+            </div>
+            <div class="TicketHeader-openTicket-flex2">Elm_1234</div>
+            <div class="TicketHeader-openTicket-flex3">In Progress</div>
+          </div>
+          <div class="TicketBody">Learning is fun.</div>
+        </div>
+        <div class="grid-item-OpenTemplate">
+          <div class="TicketHeader">
+            <div class="TicketHeader-openTicket-flex1">
+              <FcApproval />
+            </div>
+            <div class="TicketHeader-openTicket-flex2">Elm_1234</div>
+            <div class="TicketHeader-openTicket-flex3">In Progress</div>
+          </div>
+          <div class="TicketBody">Learning is fun.</div>
+        </div>
+        <div class="grid-item-OpenTemplate">
+          <div class="TicketHeader">
+            <div class="TicketHeader-openTicket-flex1">
+              <FcApproval />
+            </div>
+            <div class="TicketHeader-openTicket-flex2">Elm_1234</div>
+            <div class="TicketHeader-openTicket-flex3">In Progress</div>
+          </div>
+          <div class="TicketBody">Learning is fun.</div>
+        </div>
+        <div class="grid-item-OpenTemplate">
+          <div class="TicketHeader">
+            <div class="TicketHeader-openTicket-flex1">
+              <FcApproval />
+            </div>
+            <div class="TicketHeader-openTicket-flex2">Elm_1234</div>
+            <div class="TicketHeader-openTicket-flex3">In Progress</div>
+          </div>
+          <div class="TicketBody">Learning is fun.</div>
+        </div>
+        <div class="grid-item-OpenTemplate">
+          <div class="TicketHeader">
+            <div class="TicketHeader-openTicket-flex1">
+              <FcApproval />
+            </div>
+            <div class="TicketHeader-openTicket-flex2">Elm_1234</div>
+            <div class="TicketHeader-openTicket-flex3">In Progress</div>
+          </div>
+          <div class="TicketBody">Learning is fun.</div>
+        </div>
+        <div class="grid-item-OpenTemplate">
+          <div class="TicketHeader">
+            <div class="TicketHeader-openTicket-flex1">
+              <FcApproval />
+            </div>
+            <div class="TicketHeader-openTicket-flex2">Elm_1234</div>
+            <div class="TicketHeader-openTicket-flex3">In Progress</div>
+          </div>
+          <div class="TicketBody">Learning is fun.</div>
+        </div>
+        <div class="grid-item-OpenTemplate">
+          <div class="TicketHeader">
+            <div class="TicketHeader-openTicket-flex1">
+              <FcApproval />
+            </div>
+            <div class="TicketHeader-openTicket-flex2">Elm_1234</div>
+            <div class="TicketHeader-openTicket-flex3">In Progress</div>
+          </div>
+          <div class="TicketBody">Learning is fun.</div>
+        </div>
       </div>
     </div>
   );

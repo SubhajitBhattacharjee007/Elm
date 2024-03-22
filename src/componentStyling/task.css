@@ -1,7 +1,6 @@
 .TaskContainer {
   width: 700px;
   height: calc(100vh - 10vmax);
-  margin-left: 20%;
 }
 .Task {
   overflow-y: scroll;
@@ -44,9 +43,11 @@ input[type="submit"] {
   cursor: pointer;
 }
 
+
 input[type="submit"]:hover {
   background-color: #d30dd3;
 }
+
 
 .Task label {
   color: black;

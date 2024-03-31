@@ -1,35 +1,95 @@
-import React from "react";
+import React, { useState } from "react";
+import axios from "axios";
 
-function Task() {
+function Task(props) {
   const tempvariable = "12345";
+
+  const [formData, setFormData] = useState({
+    projectName: "",
+    issueType: ""
+  });
+
+  const handleChange = (e) => {
+    setFormData({ ...formData, [e.target.name]: e.target.value });
+  };
+
+  const handleSubmit = async (e) => {
+    e.preventDefault();
+    try {
+      const response = await axios.post("http://localhost:8080/xyz", formData);
+      console.log("Post created:", response.data);
+      props.setSubmitted(true);
+      props.setTicketNumber(response.data);
+    } catch (error) {
+      console.error("Error creating post:", error);
+    }
+  };
+
   return (
     <div className="TaskContainer">
       <div className="Task">
         <h2>Task: Elm_{tempvariable}</h2>
 
-        <form action="/action_page.php">
-          <label for="fname">Project Name</label>
-          <input type="text" id="fname" name="projectname"></input>
-          <label for="lname">Issue Type</label>
-          <input type="text" id="lname" name="lastname"></input>
-          <label for="country">Status</label>
-          <select id="country" name="country">
-            <option value="australia">Begin progress</option>
-            <option value="canada">Issue done</option>
-            <option value="usa">Closed</option>
-            <option value="usa">Under dev review</option>
+        <form onSubmit={handleSubmit}>
+          <label for="projectName">Project Name</label>
+          <input
+            type="text"
+            name="projectName"
+            value={formData.projectName}
+            onChange={handleChange}
+          ></input>
+          <label for="issueType">Issue Type</label>
+          <input
+            type="text"
+            name="issueType"
+            value={formData.issueType}
+            onChange={handleChange}
+          ></input>
+
+          <label for="status">Status</label>
+          <select name="status" value={formData.status} onChange={handleChange}>
+            <option value="beignProgress">Begin progress</option>
+            <option value="issueDone">Issue done</option>
+            <option value="closed">Closed</option>
+            <option value="underReview">Under dev review</option>
           </select>
+
           <label for="lname">Acceptance Criteria</label>
-          <input type="text" id="lname" name="lastname" placeholder=""></input>
-          <label for="country">Priority</label>
-          <select id="country" name="country">
-            <option value="australia">High</option>
-            <option value="canada">Medium</option>
-            <option value="usa">Low</option>
+          <input
+            type="text"
+            name="acceptanceCriteria"
+            placeholder=""
+            value={formData.acceptanceCriteria}
+            onChange={handleChange}
+          ></input>
+
+          <label for="priority">Priority</label>
+          <select
+            name="priority"
+            value={formData.priority}
+            onChange={handleChange}
+          >
+            <option value="high">High</option>
+            <option value="medium">Medium</option>
+            <option value="low">Low</option>
           </select>
-          <textarea>Issue description...</textarea>
+
+          <textarea
+            name="description"
+            value={formData.description}
+            onChange={handleChange}
+          >
+            Issue description...
+          </textarea>
+
           <label for="lname">Summary</label>
-          <input type="text" id="lname" name="lastname" placeholder=""></input>
+          <input
+            type="text"
+            name="summary"
+            placeholder=""
+            value={formData.summary}
+            onChange={handleChange}
+          ></input>
 
           <input type="submit" value="Submit"></input>
         </form>

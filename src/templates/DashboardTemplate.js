@@ -12,17 +12,23 @@ function DashboardTemplate() {
   const [open, setOpen] = useState(false);
   const [submitted, setSubmitted] = useState(false);
   const [ticketNumber, setTicketNumber] = useState();
+  const [submissionResp, setSubmittedResp] = useState(false);
 
   console.log("Open: ", open);
   console.log("Status: ", submitted);
   console.log("TicketNumber: ", ticketNumber);
+  console.log("SubmissionResp: ", submissionResp);
   return (
     <div className="DashboardTemplate">
       <NotificationContainer />
       {!open && <h2>Dashboard is empty.</h2>}
       {!open && <a onClick={() => setOpen(true)}>+ Create some tasks.</a>}
       {!submitted && open && (
-        <Task setSubmitted={setSubmitted} setTicketNumber={setTicketNumber} />
+        <Task
+          setSubmitted={setSubmitted}
+          setTicketNumber={setTicketNumber}
+          setSubmittedResp={setSubmittedResp}
+        />
       )}
       {open &&
         submitted &&
@@ -30,6 +36,13 @@ function DashboardTemplate() {
           "Ticket has been submitted. TicketNumber: " + ticketNumber,
           "Successful!"
         )}
+
+      {ticketNumber === "999"
+        ? NotificationManager.error(
+            "BACKEND SERVICE IS DOWN : " + submissionResp,
+            "BACKEND SERVICE IS DOWN!"
+          )
+        : null}
     </div>
   );
 }

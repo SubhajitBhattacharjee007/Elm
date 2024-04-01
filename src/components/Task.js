@@ -16,11 +16,14 @@ function Task(props) {
   const handleSubmit = async (e) => {
     e.preventDefault();
     try {
+      props.setTicketNumber("1");
       const response = await axios.post("http://localhost:8080/xyz", formData);
       console.log("Post created:", response.data);
       props.setSubmitted(true);
       props.setTicketNumber(response.data);
     } catch (error) {
+      props.setTicketNumber("999");
+      props.setSubmittedResp(error.stack);
       console.error("Error creating post:", error);
     }
   };

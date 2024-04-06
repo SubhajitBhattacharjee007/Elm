@@ -2,8 +2,6 @@ import React, { useState } from "react";
 import axios from "axios";
 
 function Task(props) {
-  const tempvariable = "12345";
-
   const [formData, setFormData] = useState({
     projectName: "",
     issueType: ""
@@ -31,8 +29,6 @@ function Task(props) {
   return (
     <div className="TaskContainer">
       <div className="Task">
-        <h2>Task: Elm_{tempvariable}</h2>
-
         <form onSubmit={handleSubmit}>
           <label for="projectName">Project Name</label>
           <input
@@ -50,20 +46,14 @@ function Task(props) {
           ></input>
 
           <label for="status">Status</label>
-          <select
-            name="status"
-            value={
-              formData.status == null
-                ? (formData.status = "Begin progress")
-                : formData.status
-            }
+          <input
+            type="text"
+            name="summary"
+            placeholder="Open"
+            value={(formData.status = "Open")}
             onChange={handleChange}
-          >
-            <option value="In progress">Begin progress</option>
-            <option value="Issue done">Issue done</option>
-            <option value="Closed">Closed</option>
-            <option value="Under review">Under dev review</option>
-          </select>
+            readOnly
+          ></input>
 
           <label for="lname">Acceptance Criteria</label>
           <input
@@ -93,9 +83,8 @@ function Task(props) {
             name="description"
             value={formData.description}
             onChange={handleChange}
-          >
-            Issue description...
-          </textarea>
+            placeholder="Issue description..."
+          ></textarea>
 
           <label for="lname">Summary</label>
           <input

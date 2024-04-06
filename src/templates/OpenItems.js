@@ -1,8 +1,8 @@
-import React from "react";
+import React, { useState } from "react";
 import { FcApproval } from "react-icons/fc";
 import { SlClose } from "react-icons/sl";
 import "../componentStyling/ClosedItemTemplate.css";
-import { IoIosResize, IoMdCreate } from "react-icons/io";
+import { IoIosResize } from "react-icons/io";
 
 function OpenItems(props) {
   const ticket = props.ticket;
@@ -17,7 +17,12 @@ function OpenItems(props) {
           <div class="TicketHeader-openTicket-flex3">{ticket.status}</div>
           <div class="TicketHeader-openTicket-flex4">{ticket.priority}</div>
           <div class="TicketHeader-openTicket-flex5">
-            <IoIosResize />
+            <IoIosResize
+              onClick={() => {
+                props.setOpenSelectedTicket(true);
+                props.setSelectedTicket(ticket);
+              }}
+            />
           </div>
         </div>
         <div class="TicketBody">{ticket.description}</div>

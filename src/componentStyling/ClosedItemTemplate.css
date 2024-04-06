@@ -1,14 +1,11 @@
 .ClosedItemTemplate {
-  overflow-y: scroll;
   width: 100%;
-  height: 600px;
+  height: 100%;
   margin-top: 40px;
-  margin-left: 20px;
 }
 .CurrentAssigmentTemplate {
-  overflow-y: scroll;
   width: 100%;
-  height: 600px;
+  height: 100%;
   margin-top: 40px;
 }
 .grid-container {
@@ -22,7 +19,7 @@
 .grid-item-closedTemplate {
   font-size: 30px;
   text-align: center;
-  width: 400px;
+  width: 500px;
   height: 150px;
   margin-top: 15px;
   box-shadow: rgba(0, 0, 0, 0.15) 0px 2px 8px;
@@ -31,7 +28,7 @@
 .grid-item-OpenTemplate {
   font-size: 30px;
   text-align: center;
-  width: 400px;
+  width: 500px;
   height: 150px;
   margin-top: 15px;
   box-shadow: rgba(0, 0, 0, 0.15) 0px 2px 8px;

@@ -50,11 +50,19 @@ function Task(props) {
           ></input>
 
           <label for="status">Status</label>
-          <select name="status" value={formData.status} onChange={handleChange}>
-            <option value="beignProgress">Begin progress</option>
-            <option value="issueDone">Issue done</option>
-            <option value="closed">Closed</option>
-            <option value="underReview">Under dev review</option>
+          <select
+            name="status"
+            value={
+              formData.status == null
+                ? (formData.status = "Begin progress")
+                : formData.status
+            }
+            onChange={handleChange}
+          >
+            <option value="In progress">Begin progress</option>
+            <option value="Issue done">Issue done</option>
+            <option value="Closed">Closed</option>
+            <option value="Under review">Under dev review</option>
           </select>
 
           <label for="lname">Acceptance Criteria</label>
@@ -69,12 +77,16 @@ function Task(props) {
           <label for="priority">Priority</label>
           <select
             name="priority"
-            value={formData.priority}
+            value={
+              formData.priority == null
+                ? (formData.priority = "Low")
+                : formData.priority
+            }
             onChange={handleChange}
           >
-            <option value="high">High</option>
-            <option value="medium">Medium</option>
-            <option value="low">Low</option>
+            <option value="High">High</option>
+            <option value="Medium">Medium</option>
+            <option value="Low">Low</option>
           </select>
 
           <textarea

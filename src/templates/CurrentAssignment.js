@@ -1,13 +1,12 @@
 import React from "react";
 import { useState, useEffect } from "react";
 import "../componentStyling/ClosedItemTemplate.css";
-import { FcApproval } from "react-icons/fc";
 import OpenItems from "./OpenItems";
 
 //https://react-icons.github.io/react-icons/    react-icons used from this library
 
 function CurrentAssigmentTemplate() {
-  const getAllOpenedTicketsURL = "http://localhost:8080/getTickets";
+  const getAllOpenedTicketsURL = "http://localhost:8080/getAllTickets";
 
   const [loading, setLoading] = useState(true);
   const [data, setData] = useState();

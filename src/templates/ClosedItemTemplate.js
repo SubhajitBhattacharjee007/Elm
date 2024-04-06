@@ -1,66 +1,37 @@
 import React from "react";
+import { useState, useEffect } from "react";
 import "../componentStyling/ClosedItemTemplate.css";
 import { SlClose } from "react-icons/sl";
+import OpenItems from "./OpenItems";
 
 function ClosedItemTemplate() {
-  return (
-    <div className="ClosedItemTemplate">
-      <h2>List of closed tasks.</h2>
+  const getAllOpenedTicketsURL = "http://localhost:8080/getAllClosedTickets";
+
+  const [loading, setLoading] = useState(true);
+  const [data, setData] = useState();
+
+  useEffect(() => {
+    fetch(getAllOpenedTicketsURL)
+      .then((res) => res.json())
+      .then((data) => {
+        setLoading(false);
+        setData(data);
+      });
+  }, []);
+
+  const element1 = (
+    <div className="CurrentAssigmentTemplate">
+      <h2>List of open tasks.</h2>
       <div class="grid-container">
-        <div class="grid-item-closedTemplate">
-          <div class="TicketHeader">
-            <div class="TicketHeader-closedTicket-flex1">
-              <SlClose />
-            </div>
-            <div class="TicketHeader-closedTicket-flex2">Elm_1234</div>
-            <div class="TicketHeader-closedTicket-flex3"> Closed</div>
-          </div>
-          <div class="TicketBody">
-            This is bla bla bla bla blablablav blabla bla bla bla bla bla
-            blablablablaThis is bla bla bla bla blablablav blabla bla bla bla
-            bla bla blablablablaThis is bla bla bla bla blablablav blabla bla
-            bla bla bla bla blablablabla This is bla bla bla bla blablablav
-            blabla bla bla bla bla bla blablablablaThis is bla bla bla bla
-            blablablav blabla bla bla bla bla bla blablablablaThis is bla bla
-            bla bla blablablav blabla bla bla bla bla bla blablablabla This is
-            bla bla bla bla blablablav blabla bla bla bla bla bla
-            blablablablaThis is bla bla bla bla blablablav blabla bla bla bla
-            bla bla blablablablaThis is bla bla bla bla blablablav blabla bla
-            bla bla bla bla blablablabla This is bla bla bla bla blablablav
-            blabla bla bla bla bla bla blablablablaThis is bla bla bla bla
-            blablablav blabla bla bla bla bla bla blablablablaThis is bla bla
-            bla bla blablablav blabla bla bla bla bla bla blablablabla
-          </div>
-        </div>
-        <div class="grid-item-closedTemplate">
-          <div class="TicketHeader">
-            <div class="TicketHeader-closedTicket-flex1">
-              <SlClose />
-            </div>
-            <div class="TicketHeader-closedTicket-flex2">Elm_1234</div>
-            <div class="TicketHeader-closedTicket-flex3"> Closed</div>
-          </div>
-          <div class="TicketBody">
-            This is bla bla bla bla blablablav blabla bla bla bla bla bla
-            blablablablaThis is bla
-          </div>
-        </div>
-        <div class="grid-item-closedTemplate">
-          <div class="TicketHeader">
-            <div class="TicketHeader-closedTicket-flex1">
-              <SlClose />
-            </div>
-            <div class="TicketHeader-closedTicket-flex2">Elm_1234</div>
-            <div class="TicketHeader-closedTicket-flex3"> Closed</div>
-          </div>
-          <div class="TicketBody">
-            This is bla bla bla bla blablablav blabla bla bla bla bla bla
-            blablablablaThis is bla
-          </div>
-        </div>
+        {data != null
+          ? data.map((ticket) => <OpenItems ticket={ticket} />)
+          : null}
       </div>
     </div>
   );
+
+  const element2 = <p>Data...</p>;
+  return <>{loading ? element2 : element1}</>;
 }
 
 export default ClosedItemTemplate;

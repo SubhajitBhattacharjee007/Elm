@@ -1,10 +1,10 @@
 .TaskContainer {
+  overflow-y: scroll;
   width: 700px;
-  height: calc(100vh - 10vmax);
+  height: 100%;
   margin-left: 20%;
 }
 .Task {
-  overflow-y: scroll;
   width: 600px;
   height: 100%;
   padding: 10px;

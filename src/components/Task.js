@@ -2,10 +2,7 @@ import React, { useState } from "react";
 import axios from "axios";
 
 function Task(props) {
-  const [formData, setFormData] = useState({
-    projectName: "",
-    issueType: ""
-  });
+  const [formData, setFormData] = useState({});
 
   const handleChange = (e) => {
     setFormData({ ...formData, [e.target.name]: e.target.value });
@@ -16,13 +13,11 @@ function Task(props) {
     try {
       props.setTicketNumber("1");
       const response = await axios.post("http://localhost:8080/xyz", formData);
-      console.log("Post created:", response.data);
       props.setSubmitted(true);
       props.setTicketNumber(response.data);
     } catch (error) {
       props.setTicketNumber("999");
       props.setSubmittedResp(error.stack);
-      console.error("Error creating post:", error);
     }
   };
 

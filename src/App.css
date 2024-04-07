@@ -92,7 +92,7 @@
   position: fixed;
 }
 
-.sub-left-panel-1 {
+.sub-left-panel {
   display: flex;
   flex-wrap: nowrap;
   text-align: left;
@@ -105,24 +105,11 @@
   padding: 5px;
 }
 
-.sub-left-panel {
-  display: flex;
-  flex-wrap: nowrap;
-  height: 3%;
-  margin-right: 5px;
-  font-size: medium;
-  font-weight: bold;
-  background-color: white;
-  color: black;
-  padding: 10px;
-}
-
-.sub-left-panel-1:hover,
 .sub-left-panel:hover {
   background-color: rgb(230, 230, 230);
 }
 
-.sub-left-panel-1-1 {
+.sub-left-panel-div1 {
   height: 100%;
   width: 10%;
   font-size: 20px;
@@ -131,7 +118,7 @@
   text-align: centre;
 }
 
-.sub-left-panel-1-2 {
+.sub-left-panel-div2 {
   height: 100%;
   width: 80%;
   font-size: 18px;
@@ -140,6 +127,7 @@
   font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Helvetica, Arial,
     sans-serif, "Apple Color Emoji", "Segoe UI Emoji";
   color: black;
+  padding-left: 8px;
 }
 
 ::-webkit-scrollbar {

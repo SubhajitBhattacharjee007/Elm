@@ -9,10 +9,10 @@ import {
 import "react-notifications/lib/notifications.css";
 
 function TicketDetails(props) {
-  const ticket = props.selectedTicket;
 
-  const [formData, setFormData] = useState(props.selectedTicket);
+  const ticket = props.selectedTicket;
   const [formSumitted, setFormSubmitted] = useState();
+  const [formData, setFormData] = useState(props.selectedTicket);
   const [formSubmissionFailed, setFormSubmissionFailed] = useState(false);
 
   const handleChange = (e) => {
@@ -28,13 +28,12 @@ function TicketDetails(props) {
         "http://localhost:8080/updateTicket",
         formData
       );
-      console.log("Post created:", response.data);
       setFormSubmitted(true);
     } catch (error) {
       setFormSubmissionFailed(true);
-      console.error("Error creating post:", error);
     }
   };
+  
   return (
     <div className="DashboardTemplate">
       <NotificationContainer />
@@ -71,7 +70,7 @@ function TicketDetails(props) {
               <option value="Re-Opened">Re-Opened</option>
               <option value="Issue done">Issue done</option>
               <option value="Closed">Closed</option>
-              <option value="Under review">Under dev review</option>
+              <option value="Under review">Under review</option>
             </select>
 
             <label for="lname">Acceptance Criteria</label>

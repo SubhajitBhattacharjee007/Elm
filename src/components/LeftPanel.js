@@ -18,7 +18,7 @@ function LeftPanel(props) {
   return (
     <div className="left-panel">
       <div
-        className="sub-left-panel-1"
+        className="sub-left-panel"
         onClick={() => {
           props.setTemplate("Dashboard");
           setDashboardColour(bgColorOnSelect);
@@ -26,13 +26,13 @@ function LeftPanel(props) {
         }}
         style={{ backgroundColor: dashboardColor }}
       >
-        <div className="sub-left-panel-1-1">
+        <div className="sub-left-panel-div1">
           <BiSolidGrid />
         </div>
-        <div className="sub-left-panel-1-2">Dashboard</div>
+        <div className="sub-left-panel-div2">Dashboard</div>
       </div>
       <div
-        className="sub-left-panel-1"
+        className="sub-left-panel"
         onClick={() => {
           props.setTemplate("CurrentAssigmentTemplate");
           setCurrentAssgmntColor(bgColorOnSelect);
@@ -40,13 +40,13 @@ function LeftPanel(props) {
         }}
         style={{ backgroundColor: currentAssgmntColor }}
       >
-        <div className="sub-left-panel-1-1">
+        <div className="sub-left-panel-div1">
           <BiBookOpen />
         </div>
-        <div className="sub-left-panel-1-2">Open Items</div>
+        <div className="sub-left-panel-div2">Open Items</div>
       </div>
       <div
-        className="sub-left-panel-1"
+        className="sub-left-panel"
         onClick={() => {
           props.setTemplate("ClosedItems");
           setClosedItemColour(bgColorOnSelect);
@@ -54,13 +54,13 @@ function LeftPanel(props) {
         }}
         style={{ backgroundColor: closedItemColor }}
       >
-        <div className="sub-left-panel-1-1">
+        <div className="sub-left-panel-div1">
           <BiXCircle />
         </div>
-        <div className="sub-left-panel-1-2">Closed Items</div>
+        <div className="sub-left-panel-div2">Closed Items</div>
       </div>
       <div
-        className="sub-left-panel-1"
+        className="sub-left-panel"
         onClick={() => {
           props.setTemplate("Backlog");
           setBacklogColour(bgColorOnSelect);
@@ -68,10 +68,10 @@ function LeftPanel(props) {
         }}
         style={{ backgroundColor: backlogColor }}
       >
-        <div className="sub-left-panel-1-1">
+        <div className="sub-left-panel-div1">
           <BiTask />
         </div>
-        <div className="sub-left-panel-1-2">Backlog</div>
+        <div className="sub-left-panel-div2">Backlog</div>
       </div>
     </div>
   );

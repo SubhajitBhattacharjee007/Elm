@@ -5,15 +5,15 @@ import OpenItems from "./OpenItems";
 import TicketDetails from "../components/TicketDetails";
 
 function ClosedItemTemplate() {
+
   const getAllClosedTicketsURL = "http://localhost:8080/getAllClosedTickets";
-
-  const [loading, setLoading] = useState(true);
-  const [element2, setElement2] = useState(<div>Loading...</div>);
-  const [openSelectedTicket, setOpenSelectedTicket] = useState(false);
-  const [selectedTicket, setSelectedTicket] = useState();
   const [data, setData] = useState();
+  const [loading, setLoading] = useState(true);
+  const [dataLoadingView, setDataLoadingView] = useState(<div>Loading...</div>);
+  const [selectedTicket, setSelectedTicket] = useState();
+  const [openSelectedTicket, setOpenSelectedTicket] = useState(false);
 
-  let elem = (
+  const exceptionNotification = (
     <div>
       <p>
         Possibly the backend service is down, got exception while API calling [{" "}
@@ -33,8 +33,7 @@ function ClosedItemTemplate() {
         setData(data);
       })
       .catch((err) => {
-        console.log("Swallowed!");
-        setElement2(elem);
+        setDataLoadingView(exceptionNotification);
       });
   }, []);
 
@@ -55,7 +54,7 @@ function ClosedItemTemplate() {
     </div>
   );
 
-  const view = <>{loading ? element2 : element1}</>;
+  const view = <>{loading ? dataLoadingView : element1}</>;
 
   return (
     <>

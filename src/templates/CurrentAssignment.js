@@ -3,10 +3,7 @@ import { useState, useEffect } from "react";
 import "../componentStyling/ClosedItemTemplate.css";
 import OpenItems from "./OpenItems";
 import TicketDetails from "../components/TicketDetails";
-import {
-  NotificationContainer,
-  NotificationManager
-} from "react-notifications";
+import { NotificationContainer } from "react-notifications";
 
 //https://react-icons.github.io/react-icons/    react-icons used from this library
 
@@ -22,8 +19,8 @@ function CurrentAssigmentTemplate() {
   let elem = (
     <div>
       <p>
-        Possibly the backend service is down, got exception while API calling of
-        {getAllOpenedTicketsURL} You need to have the below service running:
+        Possibly the backend service is down, got exception while API calling [{" "}
+        {getAllOpenedTicketsURL} ] You need to have the below service running:
       </p>
       <a href="https://github.com/SubhajitBhattacharjee007/elm-control-service">
         elm-control-service

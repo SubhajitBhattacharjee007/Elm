@@ -12,13 +12,12 @@ function ClosedItemTemplate() {
   const [openSelectedTicket, setOpenSelectedTicket] = useState(false);
   const [selectedTicket, setSelectedTicket] = useState();
   const [data, setData] = useState();
-  var linky = "asdad";
 
   let elem = (
     <div>
       <p>
-        Possibly the backend service is down, got exception while API calling of
-        {getAllClosedTicketsURL} You need to have the below service running:
+        Possibly the backend service is down, got exception while API calling [{" "}
+        {getAllClosedTicketsURL} ] You need to have the below service running:
       </p>
       <a href="https://github.com/SubhajitBhattacharjee007/elm-control-service">
         elm-control-service

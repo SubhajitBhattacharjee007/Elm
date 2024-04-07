@@ -1,7 +1,14 @@
 import React, { useState } from "react";
+import {
+  BiSolidGrid,
+  BiGridAlt,
+  BiBookOpen,
+  BiXCircle,
+  BiTask
+} from "react-icons/bi";
 
 function LeftPanel(props) {
-  const bgColorOnSelect = "#008000";
+  const bgColorOnSelect = "#e6e6e6";
 
   const [dashboardColor, setDashboardColour] = useState();
   const [currentAssgmntColor, setCurrentAssgmntColor] = useState();
@@ -19,10 +26,13 @@ function LeftPanel(props) {
         }}
         style={{ backgroundColor: dashboardColor }}
       >
-        Dashboard
+        <div className="sub-left-panel-1-1">
+          <BiSolidGrid />
+        </div>
+        <div className="sub-left-panel-1-2">Dashboard</div>
       </div>
       <div
-        className="sub-left-panel"
+        className="sub-left-panel-1"
         onClick={() => {
           props.setTemplate("CurrentAssigmentTemplate");
           setCurrentAssgmntColor(bgColorOnSelect);
@@ -30,10 +40,13 @@ function LeftPanel(props) {
         }}
         style={{ backgroundColor: currentAssgmntColor }}
       >
-        Open Items
+        <div className="sub-left-panel-1-1">
+          <BiBookOpen />
+        </div>
+        <div className="sub-left-panel-1-2">Open Items</div>
       </div>
       <div
-        className="sub-left-panel"
+        className="sub-left-panel-1"
         onClick={() => {
           props.setTemplate("ClosedItems");
           setClosedItemColour(bgColorOnSelect);
@@ -41,10 +54,13 @@ function LeftPanel(props) {
         }}
         style={{ backgroundColor: closedItemColor }}
       >
-        Closed Items
+        <div className="sub-left-panel-1-1">
+          <BiXCircle />
+        </div>
+        <div className="sub-left-panel-1-2">Closed Items</div>
       </div>
       <div
-        className="sub-left-panel"
+        className="sub-left-panel-1"
         onClick={() => {
           props.setTemplate("Backlog");
           setBacklogColour(bgColorOnSelect);
@@ -52,7 +68,10 @@ function LeftPanel(props) {
         }}
         style={{ backgroundColor: backlogColor }}
       >
-        Backlog
+        <div className="sub-left-panel-1-1">
+          <BiTask />
+        </div>
+        <div className="sub-left-panel-1-2">Backlog</div>
       </div>
     </div>
   );

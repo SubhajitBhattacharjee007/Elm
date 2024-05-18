@@ -51,6 +51,8 @@
   word-wrap: break-word;
   overflow: hidden;
   text-overflow: ellipsis;
+  background-color: white;
+  border-radius: 10px;
   
 }
 

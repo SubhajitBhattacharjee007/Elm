@@ -76,13 +76,15 @@
   width: 87%;
   margin-left: 13%;
   float: left;
-  border-left: 3px solid rgb(207, 207, 207);
+  border-left: 3px solid rgb(162, 162, 162);
   /* border-right: 1px solid black; */
   position: fixed;
+  background-color: #f7f7f7;
+  border-radius: 10px;
 }
 
 .left-panel {
-  overflow-y: scroll;
+  /* overflow-y: scroll; */
   text-align: left;
   height: 100%;
   width: 13%;
@@ -128,22 +130,4 @@
     sans-serif, "Apple Color Emoji", "Segoe UI Emoji";
   color: black;
   padding-left: 8px;
-}
-
-::-webkit-scrollbar {
-  width: 10px;
-}
-
-::-webkit-scrollbar-track {
-  box-shadow: inset 0 0 5px white;
-  border-radius: 10px;
-}
-
-::-webkit-scrollbar-thumb {
-  background: #090;
-  border-radius: 10px;
-}
-
-::-webkit-scrollbar-thumb:hover {
-  background: rgb(5, 90, 5);
 }

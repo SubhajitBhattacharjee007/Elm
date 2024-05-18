@@ -1,7 +1,6 @@
 import React, { useState } from "react";
 import {
   BiSolidGrid,
-  BiGridAlt,
   BiBookOpen,
   BiXCircle,
   BiTask
@@ -24,7 +23,7 @@ function LeftPanel(props) {
           setDashboardColour(bgColorOnSelect);
           resetOthers("Dashboard");
         }}
-        style={{ backgroundColor: dashboardColor }}
+        style={{ backgroundColor: dashboardColor, borderRadius: '10px' }}
       >
         <div className="sub-left-panel-div1">
           <BiSolidGrid />
@@ -38,7 +37,7 @@ function LeftPanel(props) {
           setCurrentAssgmntColor(bgColorOnSelect);
           resetOthers("CurrentAssigmentTemplate");
         }}
-        style={{ backgroundColor: currentAssgmntColor }}
+        style={{ backgroundColor: currentAssgmntColor, borderRadius: '10px' }}
       >
         <div className="sub-left-panel-div1">
           <BiBookOpen />
@@ -52,7 +51,7 @@ function LeftPanel(props) {
           setClosedItemColour(bgColorOnSelect);
           resetOthers("ClosedItems");
         }}
-        style={{ backgroundColor: closedItemColor }}
+        style={{ backgroundColor: closedItemColor, borderRadius: '10px' }}
       >
         <div className="sub-left-panel-div1">
           <BiXCircle />
@@ -66,7 +65,7 @@ function LeftPanel(props) {
           setBacklogColour(bgColorOnSelect);
           resetOthers("Backlog");
         }}
-        style={{ backgroundColor: backlogColor }}
+        style={{ backgroundColor: backlogColor, borderRadius: '10px' }}
       >
         <div className="sub-left-panel-div1">
           <BiTask />

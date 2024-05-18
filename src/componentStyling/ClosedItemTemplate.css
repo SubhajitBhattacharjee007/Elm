@@ -15,6 +15,56 @@
   grid-template-columns: auto auto auto;
   /* background-color: #2196f3; */
   padding: 10px;
+  /* border: 1px solid black; */
+}
+
+.filter-navbar {
+  width: 96.5%;
+  height: 5%;
+  border-bottom: 2px solid #0066cc;
+  margin-bottom: 25px;
+  margin-left: 10px;
+  border-radius: 10px;
+  background-color: #cce6ff;
+  display: flex;
+  column-gap: 5px;
+}
+
+.filter-navbar-div{
+  margin-left: 10px;
+  margin-top: 3px;
+  width: 5%;
+  height: 87%;
+  /* border: 1px solid black; */
+  /* border-radius: 10px; */
+  /* background-color: #cccccc; */
+  font-size: 32px;
+  /* border: 1px solid #b3b3b3; */
+}
+
+.filter-navbar-div-search{
+  /* margin-left: 10px; */
+  margin-left: auto;
+  margin-right: 0;
+  margin-top: 5px;
+  width: 5%;
+  height: 80%;
+  /* border: 1px solid black; */
+  border-radius: 20px;
+  background-color: #b3d9ff;
+  font-size: 27px;
+  padding-left: 20%;
+  border-bottom: 2px solid #0066cc;
+  align-items: center;
+}
+
+.filter-navbar-div-search:hover{
+  background-color: white;
+}
+
+.filter-navbar-div:hover{
+  background-color: white;
+  border-radius: 10px;
 }
 
 .grid-item-closedTemplate {

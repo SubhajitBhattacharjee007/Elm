@@ -4,6 +4,9 @@ import "../componentStyling/ClosedItemTemplate.css";
 import OpenItems from "./OpenItems";
 import TicketDetails from "../components/TicketDetails";
 import { NotificationContainer } from "react-notifications";
+import { TbFilterSearch } from "react-icons/tb";
+import { SlMagnifier } from "react-icons/sl";
+import { SlMenu } from "react-icons/sl";
 
 //https://react-icons.github.io/react-icons/    react-icons used from this library
 
@@ -44,7 +47,12 @@ function CurrentAssigmentTemplate() {
   const element1 = (
     <div className="CurrentAssigmentTemplate">
       <NotificationContainer />
-      <h2>List of open tasks.</h2>
+      <div className="filter-navbar">
+        <div className="filter-navbar-div"><TbFilterSearch/></div>
+        <div className="filter-navbar-div"><SlMenu/></div>
+        <div className="filter-navbar-div-search">
+          <SlMagnifier/></div>
+      </div>
       <div class="grid-container">
         {data != null
           ? data.map((ticket) => (

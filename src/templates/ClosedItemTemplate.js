@@ -3,6 +3,11 @@ import { useState, useEffect } from "react";
 import "../componentStyling/ClosedItemTemplate.css";
 import OpenItems from "./OpenItems";
 import TicketDetails from "../components/TicketDetails";
+import { NotificationContainer } from "react-notifications";
+import { TbFilterSearch } from "react-icons/tb";
+import { SlMagnifier } from "react-icons/sl";
+import { SlCalender } from "react-icons/sl";
+import { SlMenu } from "react-icons/sl";
 
 function ClosedItemTemplate() {
 
@@ -39,7 +44,17 @@ function ClosedItemTemplate() {
 
   const element1 = (
     <div className="CurrentAssigmentTemplate">
-      <h2>List of open tasks.</h2>
+      <div className="A">
+      <NotificationContainer />
+      <div className="filter-navbar">
+        <div className="filter-navbar-div"><TbFilterSearch/></div>
+        <div className="filter-navbar-div"><SlMenu/></div>
+        <div className="filter-navbar-div"><SlCalender/></div>
+        <div className="filter-navbar-div-search">
+          <SlMagnifier/></div>
+      </div>
+      </div>
+      <div className="B">
       <div class="grid-container">
         {data != null
           ? data.map((ticket) => (
@@ -50,6 +65,7 @@ function ClosedItemTemplate() {
               />
             ))
           : null}
+      </div>
       </div>
     </div>
   );

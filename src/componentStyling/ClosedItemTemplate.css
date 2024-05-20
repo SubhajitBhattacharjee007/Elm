@@ -8,6 +8,19 @@
   height: 100%;
   margin-top: 40px;
 }
+
+.A{
+  width: 100%;
+  height: 10%;
+  margin-top: 40px;
+}
+
+.B{
+  overflow-y: scroll;
+  width: 100%;
+  height: 84%;
+}
+
 .grid-container {
   display: grid;
   column-gap: 10px;
@@ -19,23 +32,23 @@
 }
 
 .filter-navbar {
-  position: relative;
-  width: 96.5%;
-  height: 5%;
-  border-bottom: 2px solid #0066cc;
+  /* position: relative; */
+  width: 95.5%;
+  height: 50%;
+  border-bottom: 2px solid #545759;
   margin-bottom: 25px;
   margin-left: 10px;
   border-radius: 10px;
-  background-color: #cce6ff;
+  background-color: #e6e6e6;
   display: flex;
   column-gap: 5px;
 }
 
 .filter-navbar-div{
-  margin-left: 10px;
+  /* margin-left: 10px; */
   margin-top: 3px;
   width: 5%;
-  height: 87%;
+  height: 95%;
   /* border: 1px solid black; */
   /* border-radius: 10px; */
   /* background-color: #cccccc; */
@@ -45,27 +58,29 @@
 
 .filter-navbar-div-search{
   /* margin-left: 10px; */
-  margin-left: auto;
+  margin-left: 58%;
   margin-right: 0;
   margin-top: 5px;
   width: 5%;
   height: 80%;
   /* border: 1px solid black; */
-  border-radius: 20px;
-  background-color: #b3d9ff;
-  font-size: 27px;
+  border-radius: 10px;
+  background-color: #eff0f1;
+  font-size: 30px;
   padding-left: 20%;
-  border-bottom: 2px solid #0066cc;
+  border-bottom: 2px solid #545759;
   align-items: center;
 }
 
 .filter-navbar-div-search:hover{
-  background-color: white;
+  background-color: black;
+  color: white;
 }
 
 .filter-navbar-div:hover{
-  background-color: white;
+  background-color: black;
   border-radius: 10px;
+  color: white;
 }
 
 .grid-item-closedTemplate {
@@ -89,12 +104,13 @@
   box-shadow: rgba(0, 0, 0, 0.15) 0px 3px 10px;
   border-radius: 10px;
   border-bottom: 4px solid #bfbfbf;
+  box-sizing:border-box
 }
 
 .TicketBody {
   text-align: left;
   font-size: 16px;
-  width: 100%;
+  width: 98%;
   height: 75%;
   font-family: 'Courier New', Courier, monospace;
   color: black;
@@ -104,7 +120,7 @@
   text-overflow: ellipsis;
   background-color: white;
   border-radius: 10px;
-  
+  padding: 5px;
 }
 
 .TicketHeader {
@@ -160,7 +176,8 @@
   font-size: 25px;
   line-height: 30px;
   vertical-align: right;
-  padding-left: 90px;
+  padding-left: 80px;
+  padding-right: 0;
   padding-top: 5px;
   color: grey;
 }

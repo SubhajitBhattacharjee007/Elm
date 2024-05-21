@@ -6,13 +6,14 @@
 .CurrentAssigmentTemplate {
   width: 100%;
   height: 100%;
-  margin-top: 40px;
+  margin-top: 5px;
 }
 
 .A{
   width: 100%;
-  height: 10%;
-  margin-top: 40px;
+  height: 6%;
+  margin-top: 20px;
+  margin-bottom: 10px;
 }
 
 .B{
@@ -34,19 +35,21 @@
 .filter-navbar {
   /* position: relative; */
   width: 95.5%;
-  height: 50%;
-  border-bottom: 2px solid #545759;
+  height: 80%;
+  /* border-bottom: 2px solid #545759; */
   margin-bottom: 25px;
   margin-left: 10px;
-  border-radius: 10px;
+  /* border-radius: 10px; */
   background-color: #e6e6e6;
   display: flex;
   column-gap: 5px;
+  box-shadow: inset 0 -3px 0 0 cornflowerblue;
+  
 }
 
 .filter-navbar-div{
   /* margin-left: 10px; */
-  margin-top: 3px;
+  /* margin-top: 3px; */
   width: 5%;
   height: 95%;
   /* border: 1px solid black; */
@@ -60,26 +63,25 @@
   /* margin-left: 10px; */
   margin-left: 58%;
   margin-right: 0;
-  margin-top: 5px;
+  margin-top: 1px;
   width: 5%;
   height: 80%;
   /* border: 1px solid black; */
-  border-radius: 10px;
+  border-radius: 20px;
   background-color: #eff0f1;
   font-size: 30px;
   padding-left: 20%;
-  border-bottom: 2px solid #545759;
+  border: 1px solid #bdbdbd;
   align-items: center;
 }
 
 .filter-navbar-div-search:hover{
-  background-color: black;
-  color: white;
+  border: 2px solid black;
 }
 
 .filter-navbar-div:hover{
   background-color: black;
-  border-radius: 10px;
+  /* border-radius: 10px; */
   color: white;
 }
 

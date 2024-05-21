@@ -35,37 +35,33 @@
 
 .NavBar-btn-first {
   text-align: center;
-  height: 20px;
+  height: 100%;
   padding-bottom: 2px;
   width: 7%;
   border-right: 1px solid white;
   color: white;
   vertical-align: top;
   display: inline-block;
-  margin: 1px;
-  margin-top: 3px;
 }
 
 .NavBar-btn {
   text-align: center;
-  height: 20px;
+  height: 100%;
   padding-bottom: 2px;
   width: 7%;
   border-right: 1px solid white;
   color: white;
   vertical-align: top;
   display: inline-block;
-  margin: 1px;
-  margin-left: 4px;
-  margin-top: 3px;
 }
 
 .NavBar-btn-first:hover,
 .NavBar-btn:hover {
-  background-color: white;
-  border-top: 1px solid black;
-  border-left: 1px solid black;
-  color: black;
+  background-color: black;
+  /* border-top: 1px solid black;
+  border-left: 1px solid black; */
+  color: white;
+  font-size: large;
 }
 
 .right-panel {

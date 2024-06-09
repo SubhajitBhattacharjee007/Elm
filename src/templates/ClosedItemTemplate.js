@@ -4,10 +4,11 @@ import "../componentStyling/ClosedItemTemplate.css";
 import OpenItems from "./OpenItems";
 import TicketDetails from "../components/TicketDetails";
 import { NotificationContainer } from "react-notifications";
-import { TbFilterSearch } from "react-icons/tb";
 import { SlMagnifier } from "react-icons/sl";
 import { SlCalender } from "react-icons/sl";
 import { SlMenu } from "react-icons/sl";
+import FilterItemsOrderById from "../utils/FilterItemsOrderById";
+import FilterItemsOnPriority from "../utils/FilterItemsOnPriority";
 
 function ClosedItemTemplate() {
 
@@ -47,8 +48,10 @@ function ClosedItemTemplate() {
       <div className="A">
       <NotificationContainer />
       <div className="filter-navbar">
-        <div className="filter-navbar-div"><TbFilterSearch/></div>
-        <div className="filter-navbar-div"><SlMenu/></div>
+        <div className="filter-navbar-div-1" onClick={()=>{console.log("CLICKED..")}}>
+          <FilterItemsOrderById />
+        </div>
+        <div className="filter-navbar-div-1"><FilterItemsOnPriority/></div>
         <div className="filter-navbar-div"><SlCalender/></div>
         <div className="filter-navbar-div-search">
           <SlMagnifier/></div>

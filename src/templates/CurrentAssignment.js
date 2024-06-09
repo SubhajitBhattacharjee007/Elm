@@ -8,6 +8,8 @@ import { TbFilterSearch } from "react-icons/tb";
 import { SlMagnifier } from "react-icons/sl";
 import { SlCalender } from "react-icons/sl";
 import { SlMenu } from "react-icons/sl";
+import FilterItemsOrderById from "../utils/FilterItemsOrderById";
+import FilterItemsOnPriority from "../utils/FilterItemsOnPriority";
 
 //https://react-icons.github.io/react-icons/    react-icons used from this library
 
@@ -50,8 +52,8 @@ function CurrentAssigmentTemplate() {
       <div className="A">
       <NotificationContainer />
       <div className="filter-navbar">
-        <div className="filter-navbar-div"><TbFilterSearch/></div>
-        <div className="filter-navbar-div"><SlMenu/></div>
+        <div className="filter-navbar-div-1"><FilterItemsOrderById/></div>
+        <div className="filter-navbar-div-1"><FilterItemsOnPriority/></div>
         <div className="filter-navbar-div"><SlCalender/></div>
         <div className="filter-navbar-div-search">
           <SlMagnifier/></div>
